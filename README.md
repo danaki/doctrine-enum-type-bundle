@@ -4,19 +4,8 @@ Configures [Doctrine Enum Type](https://github.com/acelaya/doctrine-enum-type) v
 
 ## Installation
 
-Add to composer.json:
 ```
-{
-  "require": {
-    "danaki/doctrine-enum-type-bundle": "dev-master"
-  },
-  "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/danaki/doctrine-enum-type-bundle.git"
-        }
-  ],
-}
+composer require danaki/doctrine-enum-type-bundle
 ```
 
 ## Usage
