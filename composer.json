@@ -11,7 +11,7 @@
     "require": {
         "php": "^7.1",
         "symfony/framework-bundle": "^5.0",
-        "acelaya/doctrine-enum-type": "^2.2"
+        "acelaya/doctrine-enum-type": "^2.3"
     },
 
     "autoload": {
