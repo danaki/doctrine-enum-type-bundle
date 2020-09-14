@@ -10,12 +10,12 @@ composer require danaki/doctrine-enum-type-bundle
 
 ## Usage
 
-Create `config/doctrine_enum_type.yaml` with similar contents:
+Create `config/packages/doctrine_enum_type.yaml` with similar contents:
 ```
 danaki_doctrine_enum_type:
     types:
         php_enum_gender: Acelaya\Enum\Gender
-        Acelaya\Enum\Action: ~
+        App\Enum\YourEnum: ~
 ```
 
 ## Problems
