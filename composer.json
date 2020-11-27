@@ -9,7 +9,7 @@
     ],
 
     "require": {
-        "php": "^7.1",
+        "php": ">=7.1",
         "symfony/framework-bundle": "^5.0|^4.0",
         "acelaya/doctrine-enum-type": "^2.3"
     },
