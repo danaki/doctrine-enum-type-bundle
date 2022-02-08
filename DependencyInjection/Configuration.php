@@ -14,18 +14,12 @@ class Configuration implements ConfigurationInterface
     {
         $treeBuilder = new TreeBuilder('doctrine_enum_type');
 
-        if (method_exists($treeBuilder, 'getRootNode')) {
-            $rootNode = $treeBuilder->getRootNode();
-        } else {
-            // for symfony/config 4.1 and older
-            $rootNode = $treeBuilder->root('doctrine_enum_type');
-        }
-
-        $rootNode->children()
-                    ->arrayNode('types')
-                        ->useAttributeAsKey('name')
-                        ->prototype('scalar')->end()
-                    ->end()
+        $treeBuilder->getRootNode()
+            ->children()
+                ->arrayNode('types')
+                    ->useAttributeAsKey('name')
+                    ->prototype('scalar')->end()
+                ->end()
             ->end()
         ->end();
 
